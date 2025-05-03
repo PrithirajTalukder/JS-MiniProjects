@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'gilroy';
+    box-sizing: border-box;
+}
+
+html, body{
+
+    width: 100%;
+    height: 100%;
+
+
+}
+   
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100%;
+    width: 100%;
+    background-color: rgb(74, 211, 202);
+}
+
+#ptop{
+    align-items: center;
+    padding: 0 30%;
+    justify-content: space-between;
+    display: flex;
+    color: black;
+    height: 100px;
+    width: 100%;
+    background-color: aquamarine;
+    
+}
+
+#panel{
+    
+    height: 80%;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(150, 145, 212);
+}
+
+.elem{
+    
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.elem h4{
+    font-size: 20px;
+    font-weight: 900;
+
+}
+   
+ .box{
+    font-size: 25px;
+    font-weight: 800;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#pbtm{
+    display: flex;
+flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    height: calc(100% - 100px);
+    
+}
+
+.bubble{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    font-weight: 600;
+}
+
+.bubble:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+

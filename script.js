@@ -1,5 +1,6 @@
 var timer = 60;
 var score = 0;
+var newHit = 0;
 
 
 
@@ -8,7 +9,7 @@ function bubblesMake(){
     
     var clutter = "";
 
-for(i=1; i<168; i++){
+for(i=1; i<211; i++){
     var rn = Math.floor(Math.random() * 10);
    clutter +=  `<div class="bubble">${rn}</div>`
 }
@@ -26,6 +27,7 @@ function timerStart(){
 
     }else{
         clearInterval(setInt);
+        document.querySelector("#pbtm").innerHTML = `<h1>Game Over<h1>`
     }
        
 
@@ -35,7 +37,7 @@ function timerStart(){
 
 
 function newhitVal(){
-    var newHit = Math.floor(Math.random() * 10);
+    newHit = Math.floor(Math.random() * 10);
     document.querySelector("#hitval").textContent = newHit;
 }
 
@@ -45,7 +47,17 @@ function scoreChange(){
     document.querySelector("#scoreval").textContent = score;
 }
 
+
+document.querySelector("#pbtm")
+.addEventListener("click", function(dets){
+    var clickedBubble = Number(dets.target.textContent);
+    if (clickedBubble === newHit){
+        scoreChange();
+        bubblesMake();
+        newhitVal();
+    }
+})
+
 bubblesMake();
 timerStart();
 newhitVal();
-scoreChange();

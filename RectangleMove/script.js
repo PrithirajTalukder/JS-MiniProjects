@@ -15,13 +15,6 @@
             ease: Power4,
         } )
 
-
-
-
-
-
-
-
     }else{
          var bluecolor = gsap.utils.mapRange(
             rectanglelocation.width/2, rectanglelocation.width, 0, 255, insideval

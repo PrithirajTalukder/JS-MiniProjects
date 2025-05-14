@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+html,body{
+
+    height: 100%;
+    width: 100%;
+
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #111;
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.nav img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    opacity: 0;
+}

@@ -23,12 +23,15 @@ html,body{
 }
 
  .cursor{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: #fff;
-    position: absolute;
    
+    position: absolute;
+    transition: all linear 0.2s;
+    mix-blend-mode: difference;
+   
+}
+
+.cursor h5{
+    font-size: 20px;
 }
 
 #main h1{

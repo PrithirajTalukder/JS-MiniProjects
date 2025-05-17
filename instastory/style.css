@@ -20,8 +20,57 @@ body{
 
 #card{
     height: 450px;
-    width: 350px;
-    background-color: #fff;gg
+    width: 310px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid #111;
+    position: relative;
+}
+
+#story{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+    
+}
+
+#circle{
+    height: 80px;
+    width: 80px;
+    margin: 5px 20px;
+    border-radius: 50%;
+    border: 3px solid rgb(176, 17, 255);
+    overflow: hidden;
+    display: inline-block;
+}
+    
+    #story::-webkit-scrollbar{
+        display: none;
+    }
+
+
+    
+
+    #big{
+    height: 450px;
+    width: 310px;
+    background-color: red;
     border-radius: 10px;
     border: 3px solid #111;
+    position: absolute;
+    display: none;
+    background-position: center;
+    background-size: cover;
+    }
+
+#circle img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    object-position: center;
 }

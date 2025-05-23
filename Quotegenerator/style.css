@@ -20,7 +20,7 @@ html,body{
 #container{ 
     width: auto;
     padding: 20px 30px;
-    max-width: 800px;
+    min-width: 800px;
     border: 2px solid black;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -28,7 +28,7 @@ html,body{
 }
 
 #quotetext{
-    font-size: 2.50rem;
+    font-size: 2.30rem;
 }
 
 .long-quote{
@@ -36,14 +36,63 @@ html,body{
 }
 
 .fa-quote-left{
-    font-size: 4rem;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.fa-quote-right{
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#quote-author{
+    margin-top: 20px;
+    margin-top: 20px;
 }
 
 #author{
     font-size: 2rem;
     font-weight: 400;
-    margin-top: 20px;
+    
     font-style: italic;
+}
+
+#btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: black;
+    padding: 0.5rem 1.8rem;
+    outline: none;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65) ;
+}
+
+
+button:hover{
+    filter: brightness(160%);
+}
+
+button:active{
+    transform: translate(0, 0.5rem);
+    box-shadow: 0 0.1rem rgba(255,255,255,0.65) ;
+}
+
+#twitter:hover{
+    color: #38a1f3;
+
+}
+
+.fa-twitter{
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1000px){

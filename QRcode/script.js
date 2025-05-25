@@ -7,7 +7,7 @@ function generateQr(){
 
     if(qrtext.value.length > 0){
 
-        img.src = " https://api.qrserver.com/v1/create-qr-code/?size=150x150&data= https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrtext.value;
+        img.src = " https://api.qrserver.com/v1/create-qr-code/?size=150x150&data= " + qrtext.value;
 
 imgdiv.classList.add("show-img");
 
